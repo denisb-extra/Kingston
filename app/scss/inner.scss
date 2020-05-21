@@ -1,0 +1,734 @@
+/* ---------------------- Section top-inner ---------------------- */
+section.top-inner {
+	background-color: #edf1f4;
+	padding-top: 90px;
+	padding-bottom: 45px;
+	position: relative;
+	background-image: url("../images/inner/bg-top-inner.jpg");
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	.title {
+		@include f-b;
+		font-size: 50px;
+		line-height: 50px;
+		color: #fff;
+		margin: 0;
+		text-align: right;
+		display: inline-block;
+	}
+	.breadcrumbs {
+		text-align: right;
+		margin-top: 30px;
+		display: inline-block;
+		float: left;
+	}
+	.line {
+		@include f-r;
+		font-size: 18px;
+		color: #fff;
+		a {
+			@include f-r;
+			font-size: 18px;
+			color: #fff;
+			margin: 0 5px;
+		}
+		.breadcrumb_last {
+			@include f-b;
+			font-size: 18px;
+			color: #fff;
+			margin: 0 5px;
+		}
+	}
+
+	@media only screen and (max-width : $lw) {
+		padding-top: 50px;
+		padding-bottom: 40px;
+		.title {
+			font-size: 40px;
+		}
+
+	}
+	@media only screen and (max-width : $mw) {
+		padding-bottom: 30px;
+		.title {
+			font-size: 40px;
+			line-height: 30px;
+		}
+		.breadcrumbs {
+			float: none;
+			display: block;
+			margin-top: 15px;
+		}
+	}
+}
+/* --------------------- /Section top-inner ---------------------- */
+
+/* ---------------------- Section content-bottom ---------------------- */
+section.content-bottom {
+	.parts {
+		display: flex;
+		margin: 0 -30px;
+		.part {
+			width: 50%;
+			padding: 0 30px;
+			&:nth-child(1) {
+			}
+			&:nth-child(2) {
+			}
+		}
+	}
+
+	.title {
+		@include f-b;
+		font-size: 24px;
+		color: #34454F;
+	}
+	.content {
+		@include f-r;
+		font-size: 18px;
+		color: #34454F;
+		p {
+			margin-top: 20px;
+		}
+	}
+
+	@media only screen and (max-width : $mw) {
+		.parts {
+			flex-wrap: wrap;
+			.part {
+				width: 100%;
+				&:nth-child(2) {
+					margin-top: 20px;
+				}
+			}
+		}
+
+		.title {
+			font-size: 20px;
+		}
+		.content {
+			font-size: 16px;
+		}
+	}
+}
+/* --------------------- /Section content-bottom ---------------------- */
+
+/* ---------------------- Section product ---------------------- */
+section.product {
+	.parts {
+		display: flex;
+		margin: 0 -30px;
+		.part {
+			width: 50%;
+			padding: 0 30px;
+			&:nth-child(1) {
+			}
+			&:nth-child(2) {
+			}
+		}
+	}
+
+	.title {
+		@include f-b;
+		font-size: 36px;
+		color: #283786;
+	}
+
+	.content {
+		@include f-r;
+		font-size: 18px;
+		color: #34454F;
+		p, ul, h1, h2, h3, h4 {
+			margin-top: 20px;
+		}
+	}
+
+	.gallery {
+		font-size: 0;
+		overflow: hidden;
+		.main-img {
+			width: 100%;
+			position: relative;
+			outline: none;
+			text-align: center;
+			img{
+				max-width: 100%;
+			}
+		}
+		.wrap {
+			position: relative;
+			display: inline-block;
+			width: 100%;
+			outline: none;
+		}
+
+
+		.thumbs {
+			margin-top: 20px;
+			.owl-nav {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 100%;
+				@include f-r;
+				font-size: 35px;
+				color: #283786;
+				pointer-events: none;
+				.owl-prev, .owl-next {
+					pointer-events: auto;
+					background: #fff;
+					padding: 0 5px;
+				}
+				.owl-prev {
+					float: left;
+					border-radius: 0 5px 5px 0;
+					padding-left: 0;
+				}
+
+				.owl-next {
+					float: right;
+					border-radius: 5px 0 0 5px;
+					padding-right: 0;
+				}
+			}
+			.thumb {
+				//width: 23%;
+				cursor: pointer;
+				transition: 0.5s;
+				
+				text-align: center;
+				overflow: hidden;
+				
+				//width: 130px;
+				&.selected {
+					opacity: 0.5;
+				}
+				img {
+					//width: 100%;
+					//max-height: 90px;
+					width: auto;
+					margin: auto;
+				}
+				//margin:1%;
+				
+			}
+		}
+	}
+
+	@media only screen and (max-width : $mw) {
+		.parts {
+			flex-wrap: wrap;
+			.part {
+				width: 100%;
+			}
+		}
+
+		.title {
+			font-size: 30px;
+		}
+
+		.content {
+			font-size: 16px;
+		}
+		.gallery {
+			margin-top: 25px;
+		}
+	}
+}
+/* --------------------- /Section product ---------------------- */
+
+/* ---------------------- Section blog ---------------------- */
+section.blog {
+	&.blog-more {
+		.boxes {
+			margin-top: 25px;
+		}
+	}
+	.boxes {
+		display: flex;
+		flex-wrap: wrap;
+		font-size: 0;
+		margin: -45px;
+		.box {
+			width: 50%;
+			margin: 0;
+			padding: 45px;
+			display: block;
+			position: relative;
+			overflow: hidden;
+			.inner {
+				overflow: hidden;
+				position: relative;
+				display: flex;
+
+			}
+			.image {
+				width: 225px;
+				flex-shrink: 0;
+				margin-left: 20px;
+				img {
+					width: 100%;
+				}
+			}
+	
+			.text {
+				text-align: left;
+				.title {
+					@include f-b;
+					font-size: 24px;
+					color: #34454F;
+					text-align: right;
+				}
+				.content {
+					@include f-r;
+					font-size: 18px;
+					color: #000000;
+					text-align: right;
+					p {
+						margin-top: 15px;
+					}
+				}
+
+				.image-mobile {
+					text-align: right;
+					margin-top: 10px;
+					display: none;
+					img {
+						max-width: 100%;
+					}
+				}
+
+				.btn {
+					margin-top: 35px;
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width : $tw) {
+		.boxes {
+			margin: -25px;
+			.box {
+				padding: 25px;
+				.image {
+					width: 150px;
+				}
+
+				.text {
+					.title {
+						font-size: 20px;
+					}
+					.content {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width : $mw) {
+		.boxes {
+			margin: -15px;
+			.box {
+				padding: 15px;
+				.inner {
+					flex-wrap: wrap;
+				}
+				.text {
+					text-align: right;
+					.title {
+						font-size: 18px;
+						line-height: 18px;
+					}
+					.image-mobile {
+						display: block;
+					}
+					.btn {
+						margin-top: 15px;
+					}
+				}
+				.image {
+					display: none;
+				}
+			}
+		}
+	}
+}
+/* --------------------- /Section blog ---------------------- */
+
+/* ---------------------- Section post ---------------------- */
+section.post {
+	.img-main {
+		width: 50%;
+		float: left;
+		margin-right: 50px;
+		margin-bottom: 50px;
+		&.mobile {
+			display: none;
+		}
+		img {
+			width: 100%;
+		}
+	}
+
+	.content {
+		.title {
+			@include f-b;
+			font-size: 36px;
+			line-height: 36px;
+			color: #283786;
+		}
+
+		@include f-r;
+		font-size: 18px;
+		color: #34454F;
+
+		p, h1 ,h2, h3, h4, h5 {
+			margin-top: 20px;
+		}
+
+	}
+
+	@media only screen and (max-width : $tw) {
+		.content {
+			.title {
+				font-size: 30px;
+				line-height: 30px;
+			}
+		}
+	}
+
+	@media only screen and (max-width : $mw) { 
+		.content {
+			.title {
+				font-size: 25px;
+    			line-height: 25px;
+			}
+			font-size: 16px;
+			p {
+				margin-top: 15px;
+			}
+		}
+		.img-main {
+			float: none;
+			width: 100%;
+			margin-right: 0;
+			margin-bottom: 0;
+			margin-top: 20px;
+			display: none;
+			&.mobile {
+				display: block;
+			}
+		}
+	}
+}
+/* --------------------- /Section post ---------------------- */
+
+/* ---------------------- Section contacts ---------------------- */
+section.contacts {
+	.parts {
+		display: flex;
+		margin: 0 -30px;
+		.part {
+			width: 50%;
+			padding: 0 30px;
+		
+			&:nth-child(1) {
+				width: 45%;
+			}
+			&:nth-child(2) {
+				width: 55%;
+			}
+		}
+	}
+
+	.title {
+		@include f-b;
+		font-size: 36px;
+		color: #283786;
+	}
+
+	.content {
+		margin-top: 35px;
+		@include f-r;
+		font-size: 24px;
+		color: #34454F;
+		p {
+			margin-top: 15px;
+		}
+	}
+
+	.important {
+		@include f-b;
+		font-size: 24px;
+		color: #fff;
+		background: #283786;
+		padding: 20px;
+		margin-top: 35px;
+	}
+
+	.contacts {
+		display: flex;
+		margin: -15px;
+		margin-top: 15px;
+		.contact {
+			padding: 15px;
+			text-align: center;
+			.icon, .line-1 {
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			.line-1 {
+				@include f-m;
+				font-size: 21px;
+				color: #34454F;
+			}
+
+			.icon {
+				font-size: 45px;
+				color: #85B8E7;
+				margin-left: 5px;
+			}
+		}
+
+	}
+
+	.wpcf7 {
+		form {
+			flex-wrap: wrap;
+			align-items: stretch;
+			justify-content: flex-end;
+			
+			.wpcf7-form-control-wrap {
+				width: 50%;
+			}
+			input, textarea, select {
+				border: 2px solid #283786;
+			}
+			textarea {
+				height: 183px;
+			}
+			.codedropz-upload-wrapper {
+				border: 2px solid #283786;
+				padding: 10px;
+				.codedropz-upload-handler {
+					margin-bottom: 0;
+				}
+				.codedropz-upload-container {
+					height: 155px;
+					display: flex;
+					align-items: center;
+					.codedropz-upload-inner {
+						h3,span {
+							display: none;
+						}
+
+						.codedropz-btn-wrap {
+							
+
+							.cd-upload-btn {
+								@include f-r;
+								font-size: 18px;
+								color: #8B8E91;
+
+								&:before {
+									content: "\f0c2";
+									font-family: FontAwesome;
+									display: block;
+									color: #283786;
+									font-size: 45px;
+								}
+							}
+						}
+					}
+				}
+				.dnd-upload-status {
+					margin-top: 15px;
+					.dnd-upload-details {
+						em {
+							margin-right: 5px;
+						}
+						.remove-file {
+							right: -2px;
+    						top: 2px;
+    					}
+
+					}
+				}
+			}
+
+			input[type="submit"] {
+				border: none;
+				width: 33%;
+				margin-top: 15px;
+				left: 3px;
+			}
+		}
+	}
+
+	@media only screen and (max-width : $tw) {
+		.title {
+			font-size: 30px;
+		}
+
+		.content {
+			margin-top: 25px;
+			font-size: 20px;
+		}
+		.important {
+			font-size: 20px;
+		}
+	}
+
+	@media only screen and (max-width : $mw) {
+		.parts {
+			flex-wrap: wrap;
+			.part {
+				width: 100%;
+				&:nth-child(1) {
+					width: 100%;
+				}
+				&:nth-child(2) {
+					width: 100%;
+					margin-top: 35px;
+				}
+			}
+		}
+		.title {
+			font-size: 25px;
+		}
+
+		.content {
+			margin-top: 25px;
+			font-size: 18px;
+		}
+		.important {
+			font-size: 20px;
+		}
+
+		.contacts {
+			.contact {
+				.line-1 {
+					font-size: 18px;
+				}
+			}
+		}
+
+		.wpcf7 {
+			margin-top: 25px;
+			form {
+				.wpcf7-form-control-wrap {
+					width: 100%;
+				}
+				input[type="submit"] {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+/* --------------------- /Section contacts ---------------------- */
+
+/* ---------------------- Section testimonials-inner ---------------------- */
+section.testimonials-inner {
+	.parts {
+		display: flex;
+		margin: 0 -20px;
+		.part {
+			width: 50%;
+			padding: 0 20px;
+			&:nth-child(1) {
+			}
+			&:nth-child(2) {
+			}
+		}
+	}
+
+	.item {
+		border: 1px solid #283786;
+		padding: 40px;
+		padding-top: 50px;
+		margin-top: 75px;
+		position: relative;
+		&:before {
+			content: "";
+			display: block;
+			width: 100px;
+			height: 55px;
+			background-color: #fff;
+			background-image: url("../images/inner/quotes.png");
+			background-position: center;
+			background-repeat: no-repeat;
+			position: absolute;
+			background-size: 70% auto ;
+			top: -35px;
+    		right: 25px;
+		}
+		.content {
+			@include f-r;
+			font-size: 18px;
+			color: #34454F;
+		}
+
+		.signature {
+			margin-top: 30px;
+			display: flex;
+			align-items: center;
+
+			.image {
+				height: 70px;
+				width: 70px;
+				flex-shrink: 0;
+				margin-left: 20px;
+				border-radius: 100%;
+				overflow: hidden;
+			}
+			.text {
+				.name {
+					@include f-m;
+					font-size: 21px;
+					color: #34454F;
+				}
+				.role {
+					@include f-l;
+					font-size: 16px;
+					color: #34454F;
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width : $tw) {
+		.item {
+			padding: 25px;
+			padding-top: 35px;
+			margin-top: 55px;
+
+			.content {
+				font-size: 16px;
+			}
+		}
+	}
+
+	@media only screen and (max-width : $mw) {
+		.parts {
+			flex-wrap: wrap;
+			.part {
+				width: 100%;
+			}
+		}
+		.item {
+			padding: 15px;
+			padding-top: 25px;
+			margin-top: 55px;
+			&:before {
+				width: 75px;
+			}
+			.content {
+				font-size: 16px;
+			}
+		}
+	}
+}
+/* --------------------- /Section testimonials-inner ---------------------- */

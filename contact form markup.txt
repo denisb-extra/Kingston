@@ -1,0 +1,7 @@
+[text* your-name placeholder "שם מלא:"] 
+[tel tel-91 placeholder "טלפון:"]
+[email* your-email placeholder "אימייל:"] 
+[text* your-name placeholder "הודעה:"] 
+[textarea textarea-106 placeholder "הודעה:"]
+[mfile upload-file-433]
+[submit "שלח"]

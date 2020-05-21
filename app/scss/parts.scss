@@ -1,0 +1,156 @@
+.btn {
+	@include f-b;
+	font-size: 18px;
+	color: #fff;
+	display: inline-block;
+	padding: 15px 30px;
+	background-image: linear-gradient(to top, #fff 50%, transparent 50%);
+	background-position: top;
+	background-size: 100% 200%;
+	min-width: 150px;
+	cursor: pointer;
+
+	transition: background-position 0.25s ease-in-out, border-color 0.25s ease-in-out, color 0.25s ease-in-out;;
+	text-align: center;
+	border: 2px solid #85B8E7;
+	&:hover {
+		color: #283786;
+		border: 2px solid #fff;
+		background-position: bottom;
+	}
+
+	&.white {
+		background-image: linear-gradient(to top, #34454E 50%, transparent 50%);
+		color: #34454E;
+		&:hover {
+			color: #fff;
+			border: 2px solid #34454E;
+			background-position: bottom;
+		}
+	}
+
+	@media only screen and (max-width : $mw) {
+		font-size: 16px;
+		padding: 15px 20px;
+		min-width: 100px;
+	}
+}
+
+.section-title {
+	@include f-b;
+	font-size: 36px;
+	color: #283786;
+	text-align: center;
+
+	@media only screen and (max-width : $tw) {
+		font-size: 30px;
+	}
+	@media only screen and (max-width : $mw) {
+		font-size: 25px;
+	}
+}
+.section-subtitle {
+	@include f-r;
+	font-size: 18px;
+	color: #252A39;
+	text-align: center;
+	margin-top: 10px;
+	@media only screen and (max-width : $tw) {
+		font-size: 18px;
+	}
+	@media only screen and (max-width : $mw) {
+		font-size: 16px;
+	}
+}
+
+
+.play-button {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	height: 100px;
+	width: 100px;
+	background: rgba(255,255,255,0.8);
+	border-radius: 100%;
+	z-index: 3;
+	cursor: pointer;
+
+	i {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		color: #283786;
+		font-size: 35px;
+		transition: 0.5s;
+	}
+	&:hover {
+		i {
+			color: #CF212A;
+		}
+	}
+}
+
+
+.slider.owl-theme {
+	.owl-dots {
+		position: absolute;
+    	bottom: -75px;
+    	width: 100%;
+    	left: 0;
+		.owl-dot {
+			span {
+				background: transparent;
+				border: 2px solid #34454E;
+				transition: 0.5s;
+			}
+
+			&.active {
+				span {
+					background: #34454E;
+				}
+			}
+			&:hover {
+				span {
+					background: #34454E;
+				}
+			}
+		}
+	}
+
+	.owl-nav {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: -35px;
+		right: -35px;
+		pointer-events: none;
+		div {
+			pointer-events: auto;
+			font-size: 55px;
+			i {
+				transition: 0.5s;
+				color: #34454E;
+			}
+			&:hover {
+				i {
+					color: #CF212A;
+				}
+			}
+		}
+		.owl-prev {
+			float: right;
+		}
+
+		.owl-next {
+			float: left;
+		}
+	}
+	@media only screen and (max-width : $mw) {
+		.owl-dots {
+			margin-top: 35px;
+		}
+	}
+}
