@@ -283,6 +283,57 @@ header {
 
 /* ----------------- /Header -------------------- */
 
+#sm_menu_ham {
+	float: left;
+	right: auto;
+	top: 10px;
+	left: 10px;
+	span {
+		background-color: #00324B;
+		height: 3px;
+	}
+}
+
+.sm_menu_outer {
+	background: #EEF1F3;
+	.mobile_menu {
+		li {
+			border-top: 1px solid #d6dbde;
+			border-bottom: 1px solid #d6dbde;
+
+			border-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #d6dbde 20%, #d6dbde 50%, #d6dbde 80%, rgba(0, 0, 0, 0) 100%) 0 0 1 0;
+			a {
+				@include f-r;
+				padding: 15px 15px;
+				color: #00324B;
+			}
+		}
+		.sub-menu {
+    		background-color: #EEF1F3 !important;
+    	}
+		.current_page_item {
+			>a {
+				color: #CF212A;
+			}
+		}
+	}
+}
+
+.sm_menu_outer.slide .mobile_menu li.hasChild > a {
+    background: url(../plugins/mmenu/images/next.png) no-repeat scroll 10px center / 5% auto;
+}
+
+.sm_menu_outer .mobile_menu li.back a {
+    padding: 20px 45px 20px 5px;
+    background: url(../plugins/mmenu/images/back.png) no-repeat scroll right 15px center / 5% auto;
+}
+
+.sm_menu_outer {
+    height: calc(100vh - 45px);
+}
+
+
+
 /* --------------- Toggle button ---------------- */
 .toggle-button {
 	width: 38px;
@@ -434,7 +485,17 @@ section.top-main {
 	height: 837px;
 	position: relative;
 	padding: 0;
-
+	
+	.video {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		video {
+			width: 100%;
+		}
+	}
 	.slider {
 		.owl-item {
 			height: 100%;
@@ -452,11 +513,11 @@ section.top-main {
 		left: 50%;
 		transform: translate(-50%, -50%);
 		text-align: center;
-		
+		width: auto;
 		max-width: 60%;
 		color: #fff;
 		z-index: 2;
-		padding: 50px;
+		padding: 30px;
 
 		&:before {
 			content: "";
@@ -473,7 +534,7 @@ section.top-main {
 		.title {
 			@include f-b;
 			font-size: 60px;
-			line-height: 80px;
+			line-height: 60px;
 		}
 		.subtitle {
 			@include f-m;
@@ -507,7 +568,7 @@ section.top-main {
 	}
 
 	@media only screen and (max-width : $mw) {
-    	height: 440px;
+    	height: 170px;
 		.section-inner {
 			max-width: 100%;
 			padding: 20px;
@@ -586,6 +647,7 @@ section.about {
 	}
 
 	@media only screen and (max-width : $mw) {
+		padding-top: 20px;
 		.parts {
 			flex-wrap: wrap;
 			.part {
@@ -612,7 +674,7 @@ section.about {
 /* ---------------------- Section contact-form ---------------------- */
 section.contact-form {
 	background-color: #283786;
-	background-image: url("../images/index/bg-form.png");
+	background-image: url("../images/index/bg-form.jpg");
 	padding-top: 50px;
 	padding-bottom: 35px;
 	filter: drop-shadow(0px 20px 30px rgba(0,0,0,0.38));
@@ -765,6 +827,13 @@ section.catalog {
 		background: #979797;
 	}
 	
+	&.more {
+		.boxes {
+			.box {
+				width: 25%;
+			}
+		}
+	}
 	.boxes {
 		display: flex;
 		flex-wrap: wrap;
@@ -790,9 +859,11 @@ section.catalog {
 				width: 100%;
 				img {
 					position: absolute;
-					height: 100%;
+					max-width: 100%;
+    				height: 100%;
 					left: 50%;
-					transform: translateX(-50%);
+					top: 50%;
+					transform: translate(-50%, -50%);
 					transition: 0.5s;
 				}
 			}
@@ -821,7 +892,7 @@ section.catalog {
 			&:hover {
 				.image {
 					img {
-						transform: translateX(-50%) scale(1.1);
+						transform: translate(-50%, -50%) scale(1.1);
 					}
 				}
 				.text {
@@ -844,6 +915,13 @@ section.catalog {
 	}
 
 	@media only screen and (max-width : $mw) {
+		&.more {
+			.boxes {
+				.box {
+					width: 50%;
+				}
+			}
+		}
 		.boxes {
 			margin: -10px;
 			margin-top: 25px;
@@ -1230,7 +1308,7 @@ section.testimonials {
 footer {
 	.part-top {
 		background-color: #283786;
-		background-image: url("../images/index/bg-footer.png");
+		background-image: url("../images/index/bg-footer.jpg");
 		padding-top: 100px;
 		padding-bottom: 75px;
 

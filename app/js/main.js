@@ -33,17 +33,7 @@ $(document).ready(function ($) {
     
     $(".mobile-menu-cont").hide();
 
-    $('.mobile-menu ul.sub-menu').hide();
-
-    $(".mobile-menu .sub-menu").each(function( index ) {
-        var mainMenuItem = $(this).parent(".menu-item"); 
-        var arrow = jQuery("<div class='open-arrow'><span>&#x25BC;</span></div>"); 
-        $(mainMenuItem).append(arrow);   
-
-       
-        $(arrow).click(function(){
-            $(mainMenuItem).find('ul.sub-menu').slideToggle();
-            $(arrow).toggleClass("rotate");
-        });
+    $(".mobile_menu").simpleMobileMenu({
+        "menuStyle": "slide",
     });
 });

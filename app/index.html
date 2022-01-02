@@ -6,7 +6,7 @@
 	<link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
 	<title>חברה | תיאור</title>
 
-	<link rel="stylesheet" href="css/style.css">
+	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="js/jquery-3.2.0.min.js"></script>
 	<script src="js/main.js"></script>
@@ -18,6 +18,11 @@
 	<script src="plugins/fancybox/jquery.fancybox.js"></script> 
 	
 	<script src="plugins/scrollreveal/scrollreveal.js"></script> 
+
+	<script src="plugins/mmenu/jquery-simple-mobilemenu.js"></script>
+	<link rel="stylesheet" href="plugins/mmenu/styles/jquery-simple-mobilemenu-slide.css">
+
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header>
@@ -28,13 +33,61 @@
 			</a>
 
 			<div class="mobile-menu-cont">
-				<ul class="mobile-menu">
-					<li class="current_page_item"><a href="">ראשי</a></li>
-					<li><a href="">אודות</a></li>
-					<li><a href="">קטלוג מוצרים</a></li>
-					<li><a href="">כתבות</a></li>
-					<li><a href="">כתבות</a></li>
-					<li><a href="">יצירת קשר</a></li>
+				<ul id="menu-%d7%aa%d7%a4%d7%a8%d7%99%d7%98-%d7%a2%d7%9c%d7%99%d7%95%d7%9f" class="mobile_menu">
+				    <li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-30">
+				        <a href="http://kingston.s201.upress.link/" aria-current="page">בית</a>
+				    </li>
+				    <li id="menu-item-843" class="menu-item menu-item-type-taxonomy menu-item-object-product_category menu-item-has-children menu-item-843">
+				        <a href="http://kingston.s201.upress.link/product_category/%d7%9e%d7%93%d7%a4%d7%99%d7%9d/">קטלוג מדפים</a>
+				        <ul class="sub-menu">
+				            <li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-44">
+				                <a href="http://kingston.s201.upress.link/product/%d7%9e%d7%93%d7%a4%d7%99%d7%9d-%d7%9c%d7%90%d7%97%d7%a1%d7%a0%d7%94-%d7%9b%d7%91%d7%93%d7%94/">מדפים לאחסנה כבדה</a>
+				            </li>
+				            <li id="menu-item-45" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-45">
+				                <a href="http://kingston.s201.upress.link/product/%d7%9e%d7%93%d7%a4%d7%99%d7%9d-%d7%9c%d7%9e%d7%97%d7%a1%d7%9f-%d7%90%d7%97%d7%a1%d7%a0%d7%94-%d7%a7%d7%9c%d7%94/">מדפים למחסן – אחסנה קלה</a>
+				            </li>
+				            <li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-43">
+				                <a href="http://kingston.s201.upress.link/product/%d7%9e%d7%93%d7%a4%d7%99-%d7%aa%d7%a6%d7%95%d7%92%d7%94-%d7%a1%d7%95%d7%a4%d7%a8-%d7%9e%d7%a8%d7%a7%d7%98/">מדפי תצוגה סופר מרקט</a>
+				            </li>
+				            <li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-37">
+				                <a href="http://kingston.s201.upress.link/product/%d7%90%d7%97%d7%a1%d7%a0%d7%94-%d7%91%d7%a9%d7%99%d7%98%d7%aa-%d7%93%d7%a8%d7%99%d7%99%d7%91-%d7%90%d7%99%d7%9f/">אחסנה בשיטת דרייב אין</a>
+				            </li>
+				            <li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-38">
+				                <a href="http://kingston.s201.upress.link/product/%d7%90%d7%97%d7%a1%d7%a0%d7%94-%d7%91%d7%a9%d7%99%d7%98%d7%aa-%d7%a7%d7%a0%d7%98%d7%99%d7%9c%d7%99%d7%91%d7%a8/">אחסנה בשיטת קנטיליבר</a>
+				            </li>
+				            <li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-42">
+				                <a href="http://kingston.s201.upress.link/product/%d7%9e%d7%93%d7%a4%d7%99-%d7%a8%d7%a9%d7%aa-%d7%95%d7%a1%d7%99%d7%a4%d7%95%d7%a0%d7%99%d7%9d/">מדפי רשת וסיפונים</a>
+				            </li>
+				            <li id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-40">
+				                <a href="http://kingston.s201.upress.link/product/%d7%92%d7%9c%d7%a8%d7%99%d7%99%d7%aa-%d7%9e%d7%a2%d7%91%d7%a8%d7%99%d7%9d/">גלריית מעברים</a>
+				            </li>
+				        </ul>
+				    </li>
+				    <li id="menu-item-844" class="menu-item menu-item-type-taxonomy menu-item-object-product_category menu-item-has-children menu-item-844">
+				        <a href="http://kingston.s201.upress.link/product_category/%d7%a9%d7%99%d7%a0%d7%95%d7%a2/">קטלוג שינוע</a>
+				        <ul class="sub-menu">
+				            <li id="menu-item-896" class="menu-item menu-item-type-taxonomy menu-item-object-product_category menu-item-896"><a href="http://kingston.s201.upress.link/product_category/%d7%9e%d7%9c%d7%92%d7%96%d7%95%d7%9f/">מלגזון</a></li>
+				            <li id="menu-item-897" class="menu-item menu-item-type-taxonomy menu-item-object-product_category menu-item-897">
+				                <a href="http://kingston.s201.upress.link/product_category/%d7%a2%d7%92%d7%9c%d7%95%d7%aa-%d7%a1%d7%95%d7%a4%d7%a8/">עגלות סופר</a>
+				            </li>
+				            <li id="menu-item-898" class="menu-item menu-item-type-taxonomy menu-item-object-product_category menu-item-898">
+				                <a href="http://kingston.s201.upress.link/product_category/%d7%a2%d7%92%d7%9c%d7%95%d7%aa-%d7%9b%d7%9c%d7%95%d7%91/">עגלות כלוב</a>
+				            </li>
+				            <li id="menu-item-899" class="menu-item menu-item-type-taxonomy menu-item-object-product_category menu-item-899">
+				                <a href="http://kingston.s201.upress.link/product_category/%d7%a9%d7%99%d7%a0%d7%95%d7%a2-%d7%97%d7%91%d7%99%d7%95%d7%aa/">שינוע חביות</a>
+				            </li>
+				            <li id="menu-item-900" class="menu-item menu-item-type-taxonomy menu-item-object-product_category menu-item-900">
+				                <a href="http://kingston.s201.upress.link/product_category/%d7%9e%d7%aa%d7%a7%d7%a0%d7%99-%d7%a0%d7%a2%d7%99%d7%9c%d7%94/">מתקני נעילה</a>
+				            </li>
+				        </ul>
+				    </li>
+				    <li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="http://kingston.s201.upress.link/%d7%a4%d7%a8%d7%95%d7%99%d7%99%d7%a7%d7%98%d7%99%d7%9d/">פרוייקטים</a></li>
+				    <li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"><a href="http://kingston.s201.upress.link/%d7%91%d7%9c%d7%95%d7%92/">בלוג</a></li>
+				    <li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35">
+				        <a href="http://kingston.s201.upress.link/%d7%9c%d7%a7%d7%95%d7%97%d7%95%d7%aa-%d7%9e%d7%9e%d7%9c%d7%99%d7%a6%d7%99%d7%9d/">לקוחות ממליצים</a>
+				    </li>
+				    <li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="http://kingston.s201.upress.link/%d7%90%d7%95%d7%93%d7%95%d7%aa/">אודות</a></li>
+				    <li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34"><a href="http://kingston.s201.upress.link/%d7%99%d7%a6%d7%99%d7%a8%d7%aa-%d7%a7%d7%a9%d7%a8/">יצירת קשר</a></li>
 				</ul>
 			</div>
    
@@ -73,12 +126,6 @@
 					<p class="line-3"><i class="fa fa-phone" aria-hidden="true"></i></p>
 				</a>
 			</div>
-
-			<div class="toggle-button">
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
 		</div>
 	</header>
 	
@@ -105,16 +152,72 @@
 			</div>
 		</div>
 	</section>
+<!--
+	<section class="top-main">
+		<div class="video">
+			<video autoplay="" loop="" playsinline="" muted="">
+				<source src="video/vid.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div class="section-inner">
+			<p class="title">קינגסטון מדפים טכנולוגיות בע"מ</p>
+			<p class="subtitle">יבוא, שיווק והתקנת מערכות אחסון מתקדמות</p>
 
+			<div class="buttons">
+				<a class="button btn">לקטלוג המוצרים</a>
+				<a class="button btn">קרא עוד</a>
+			</div>
+		</div>
+	</section>
+-->
 	<section class="about">
 		<div class="section-inner">
 			<div class="parts">
 				<div class="part">
+					<!--
 					<div class="video">
 						<img src="images/index/video.jpg" alt="">
 						<a class="play-button">
 							<i class="fa fa-play" aria-hidden="true"></i>
 						</a>
+					</div>
+					-->
+
+					<div class="gallery">
+						<div class="main-img">
+							<a class="wrap" href="images/inner/products/1-b.jpg" data-fancybox>
+								<img src="images/inner/products/1-b.jpg" alt="">
+								<span class="play-button">
+									<i class="fa fa-play" aria-hidden="true"></i>
+								</span>
+							</a>
+						</div>
+						<div class="thumbs">
+							<div class="thumb selected item" img-src="images/inner/products/1-b.jpg" video-src="video/vid.mp4">
+								<img src="images/inner/products/1.jpg" alt="">
+							</div>
+							<div class="thumb item" img-src="images/inner/products/2-b.jpg">
+								<img src="images/inner/products/2.jpg" alt="">
+							</div>
+							<div class="thumb item" img-src="images/inner/products/3-b.jpg">
+								<img src="images/inner/products/3.jpg" alt="">
+							</div>
+							<div class="thumb item" img-src="images/inner/products/4-b.jpg">
+								<img src="images/inner/products/4.jpg" alt="">
+							</div>
+							<div class="thumb selected item" img-src="images/inner/products/1-b.jpg">
+								<img src="images/inner/products/1.jpg" alt="">
+							</div>
+							<div class="thumb item" img-src="images/inner/products/2-b.jpg">
+								<img src="images/inner/products/2.jpg" alt="">
+							</div>
+							<div class="thumb item" img-src="images/inner/products/3-b.jpg">
+								<img src="images/inner/products/3.jpg" alt="">
+							</div>
+							<div class="thumb item" img-src="images/inner/products/4-b.jpg">
+								<img src="images/inner/products/4.jpg" alt="">
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="part">
@@ -549,7 +652,7 @@
 	</footer>
 	<script>
 		$(document).ready(function ($) {
-
+			/*
 			var secHeight = $("section.top-main").height();
 			var percent = 1;
 			$(window).scroll(function (event) {
@@ -561,6 +664,7 @@
 				$("section.top-main").height(secHeight*percent);
 				$("section.top-main .section-inner").css("opacity", percent);
 			});
+			*/
 
 			$('.top-main .slider').addClass("owl-carousel");
 			$('.top-main .slider').addClass("owl-theme");
@@ -602,6 +706,60 @@
 				}
 			});
 		});
+
+
+		$(document).ready(function ($) {
+			$('.gallery .thumbs').on('initialized.owl.carousel', function(event) {
+				$(".gallery .thumb").on("click", function(){
+					src = $(this).attr("img-src");
+					url = $(this).attr("img-src");
+					isVideo = false;
+					if($(this).attr("video-src")) {
+						url = $(this).attr("video-src");
+						isVideo = true;
+					}
+
+					$(".gallery .thumb").removeClass("selected");
+					$(this).addClass("selected");
+					switchImage(src, url, isVideo);
+				});
+			});
+			$('.gallery .thumbs').addClass("owl-carousel");
+			$('.gallery .thumbs').addClass("owl-theme");
+			$('.gallery .thumbs').owlCarousel({
+				items : 4, 
+				loop:false,
+				margin:20,
+				nav:true, 
+				dots: false,
+				autoplay: false,
+				smartSpeed: 1000,
+				navText : ["&rsaquo;", "&lsaquo;"],
+				responsive:{
+					0:{
+						items:3
+					},
+					550:{
+						items:4
+					}
+				}
+			});
+
+			$( ".gallery .main-img img" ).on("load", function() {
+				$(".gallery .main-img").animate({"opacity": 1});
+			});
+		});
+
+		var curIndex = 0;
+		function switchImage(src, url, isVideo = false) {
+			$(".gallery .main-img").animate({"opacity": 0}, function() {
+				$(this).find("img").attr("src", src);
+				if(url) $(this).find(".wrap").attr("href", url);
+				if(isVideo) $(this).find(".play-button").show();
+				else $(this).find(".play-button").hide();
+				console.log(isVideo)
+			});
+		}
 	</script>
 </body>
 </html>
