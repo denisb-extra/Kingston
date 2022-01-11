@@ -25,6 +25,12 @@ $lw: 1370px;
 	}
 }
 
+@mixin flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 /* Fonts */
 
 @import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900');
@@ -66,6 +72,7 @@ $lw: 1370px;
 /* Global */
 html {
 	margin: 0 !important;
+	overflow-x: hidden;
 }
 body {
 	position: relative;
@@ -133,3 +140,5 @@ section {
 @import 'parts';
 @import 'index';
 @import 'inner';
+@import 'woo-default';
+@import 'woo';

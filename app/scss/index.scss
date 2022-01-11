@@ -32,7 +32,7 @@ header {
 		
 				>li {
 					position: static;
-					margin: 0 0.5%;
+					margin: 0 0.25%;
 					height: 100%;
 					&.menu-item-has-children {
 						position: relative;
@@ -940,7 +940,32 @@ section.catalog {
 	}
 }
 /* --------------------- /Section catalog ---------------------- */
-
+section.lines {
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		display: block;
+		height: 1px;
+		width: 100%;
+		max-width: 1388px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		background: #979797;
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		display: block;
+		height: 1px;
+		width: 100%;
+		max-width: 1388px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		background: #979797;
+	}
+}
 /* ---------------------- Section advantages ---------------------- */
 section.advantages {
 	&:after {
@@ -954,6 +979,24 @@ section.advantages {
 		left: 50%;
 		transform: translate(-50%, 0);
 		background: #979797;
+	}
+
+	&.inner {
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			display: block;
+			height: 1px;
+			width: 100%;
+			max-width: 1388px;
+			left: 50%;
+			transform: translate(-50%, 0);
+			background: #979797;
+		}
+		.boxes {
+			margin-top: 0 !important;
+		}
 	}
 	.boxes {
 		display: flex;

@@ -1,3 +1,86 @@
+.content {
+	@include f-r;
+	font-size: 18px;
+	color: #222447;
+	line-height: 1.3;
+
+	&.white {
+		color: #fff;
+	}
+
+	p,ul,li,h1,h2,h3,h4,h5,img {
+		margin-top: 15px;
+	}
+
+	ul {
+		list-style: disc;
+    	padding-right: 25px;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	@media only screen and (max-width : $mw) {
+		font-size: 16px;
+	}
+}
+
+.title-big {
+	@include f-b;
+	font-size: 36px;
+	color: #283786;
+	@media only screen and (max-width : $mw) {
+		font-size: 30px;
+	}
+
+}
+.centered {
+	text-align: center;
+}
+
+.parts {
+	display: flex;
+	margin: 0 -45px;
+	&.ai-center {
+		align-items: center;
+	}
+	.part {
+		width: 50%;
+		padding: 0 45px;
+		position: relative;
+		&:nth-child(1) {
+		}
+		&:nth-child(2) {
+		}
+		.image {
+			text-align: center;
+			img {
+				max-width: 100%;
+			}
+		}
+	}
+
+	@media only screen and (max-width : $mw) {
+		flex-wrap: wrap;
+		.part {
+			width: 100%;
+			&:nth-child(2) {
+				margin-top: 25px;
+			}
+		}
+	}
+}
+
+.play {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	z-index: 3;
+	cursor: pointer;
+}
+
 .btn {
 	@include f-b;
 	font-size: 18px;
